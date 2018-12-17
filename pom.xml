@@ -9,10 +9,11 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.eljhoset</groupId>
-    <artifactId>controller-advice</artifactId>
+    <artifactId>commons-api</artifactId>
     <version>0.0.1</version>
-    <name>controller-advice</name>
-    <description>Demo project for Spring Boot</description>
+    <name>commons-api</name>
+    <description>Commons tings i tend to do</description>
+    <url>https://github.com/Eljhoset/commons-api</url>
 
     <properties>
         <java.version>1.9</java.version>
