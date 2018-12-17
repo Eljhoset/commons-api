@@ -8,7 +8,7 @@
         <version>2.1.1.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.eljhoset</groupId>
+    <groupId>com.github.eljhoset</groupId>
     <artifactId>commons-api</artifactId>
     <version>0.0.1</version>
     <name>commons-api</name>
@@ -28,7 +28,7 @@
         <developer>
             <name>Jose Daniel Ureña</name>
             <email>jd-jd-@hotmail.com</email>
-            <organization>com.eljhoset</organization>
+            <organization>com.github.eljhoset</organization>
             <organizationUrl>https://github.com/Eljhoset</organizationUrl>
         </developer>
     </developers>
