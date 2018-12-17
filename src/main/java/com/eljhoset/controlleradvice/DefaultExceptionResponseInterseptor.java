@@ -10,10 +10,9 @@ public class DefaultExceptionResponseInterseptor implements ExceptionResponseInt
 
 	@Override
 	public Object handle(Exception ex) {
-		ResponseEntity<ApiError> apiErrorResponseEntity = Optional.ofNullable(ex.getClass().getAnnotation(ApiException.class))
+		return Optional.ofNullable(ex.getClass().getAnnotation(ApiException.class))
 				.map(e -> buildApiError(e.status(), e.code(), e.message().isEmpty() ? ex.getMessage() : e.message()))
 				.orElse(buildApiError(HttpStatus.BAD_REQUEST, null, "Request could no be processed"));
-		return apiErrorResponseEntity;
 	}
 
 	private ResponseEntity<ApiError> buildApiError(HttpStatus status, Integer code, String message) {
