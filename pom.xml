@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.eljhoset</groupId>
     <artifactId>commons-api</artifactId>
-    <version>0.0.3-SNAPSHOT</version>
+    <version>0.0.3</version>
     <name>commons-api</name>
     <description>Commons tings i tend to do</description>
     <url>https://github.com/Eljhoset/commons-api</url>
@@ -43,7 +42,8 @@
         <connection>scm:git:git://github.com/Eljhoset/commons-api.git</connection>
         <developerConnection>scm:git:ssh://github.com/Eljhoset/commons-api.git</developerConnection>
         <url>https://github.com/Eljhoset/commons-api</url>
-    </scm>
+      <tag>commons-api-0.0.3</tag>
+  </scm>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
