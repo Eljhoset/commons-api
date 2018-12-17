@@ -50,7 +50,7 @@ public class BeanRegisterConfig {
 				@Override
 				public void postProcessBeanDefinitionRegistry(BeanDefinitionRegistry beanDefinitionRegistry) throws BeansException {
 					final Object mainBean = applicationContext.getBean(applicationContext.getBeanNamesForAnnotation(SpringBootApplication.class)[0]);
-					final String packageName = mainBean.getClass().getPackageName();
+					final String packageName = mainBean.getClass().getPackage().getName();
 					final Reflections reflections = new Reflections(packageName);
 					reflections.getTypesAnnotatedWith(ApiException.class).stream()
 							.collect(groupingBy(c -> c.getAnnotation(ApiException.class).code()))
