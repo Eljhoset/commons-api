@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.eljhoset</groupId>
     <artifactId>commons-api</artifactId>
-    <version>0.0.5 </version>
+    <version>0.0.6-SNAPSHOT </version>
     <name>commons-api</name>
     <description>Commons tings i tend to do</description>
     <url>https://github.com/Eljhoset/commons-api</url>
@@ -43,7 +43,7 @@
         <connection>scm:git:git://github.com/Eljhoset/commons-api.git</connection>
         <developerConnection>scm:git:ssh://github.com/Eljhoset/commons-api.git</developerConnection>
         <url>https://github.com/Eljhoset/commons-api</url>
-        <tag>commons-api-0.0.5</tag>
+        <tag>commons-api-0.0.4</tag>
     </scm>
     <dependencies>
         <dependency>
