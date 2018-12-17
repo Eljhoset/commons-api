@@ -55,7 +55,7 @@ public class BeanRegisterConfig {
 					reflections.getTypesAnnotatedWith(ApiException.class).stream()
 							.collect(groupingBy(c -> c.getAnnotation(ApiException.class).code()))
 							.entrySet()
-							.stream().filter(f -> f.getKey() > 1).findFirst().ifPresent(duplicated -> {
+							.stream().filter(f -> f.getValue().size() > 1).findFirst().ifPresent(duplicated -> {
 						throw new RuntimeException(String.format("Duplicate code %d found on api exceptions %s", duplicated.getKey(), duplicated.getValue()));
 					});
 
